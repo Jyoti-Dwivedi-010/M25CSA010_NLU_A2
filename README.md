@@ -176,10 +176,10 @@ Problem2/
 ## Problem 1 — Word Embeddings
 
 
-python crawler.py
-python preprocess.py
-python word2vec_scratch.py
-python analysis_and_vis.py
+- python crawler.py
+- python preprocess.py
+- python word2vec_scratch.py
+- python analysis_and_vis.py
 
 
 ## Problem 2 — Name Generation
