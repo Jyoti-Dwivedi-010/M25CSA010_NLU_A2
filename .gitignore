@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# virtual env
+venv/
+.env/
+
+# system files
+.DS_Store
+
+# logs
+*.log
+
+# optional: exclude huge raw data
+data/raw/
+
