@@ -147,25 +147,48 @@ Novelty: 88.17%
 
 # Repository Structure
 
-Problem1/
-├── crawler.py                 # Web scraping script to collect data
-├── preprocess.py             # Data preprocessing and cleaning
-├── word2vec_scratch.py       # Word2Vec training (Skip-gram & CBOW)
-├── analysis_and_vis.py       # Semantic analysis and visualization
-├── data/                     # Collected raw and processed data
-├── models/                   # Trained model checkpoints
-├── visualizations/           # Generated plots and visualizations
-└── requirements.txt          # Python dependencies
-
-Problem2/
-├── models.py              # RNN, BLSTM, and Attention model definitions
-├── train_evaluate.py        # Training loop and evaluation metrics
-├── patch.py  
-├── checkpoints/             # Saved model weights
-├── names_list.txt          # Training dataset
-├── loss_curves.png         # Training progression visualization
-└── requirements.txt        # Python dependencies
-
+M25CSA010_NLU_A2/
+│
+├── Problem1/
+│   ├── crawler.py              # Web scraping script to collect IITJ text data
+│   ├── preprocess.py           # Data preprocessing and corpus cleaning
+│   ├── word2vec_scratch.py     # Word2Vec implementation (CBOW & Skip-gram)
+│   ├── analysis_and_vis.py     # Semantic analysis and visualization
+│   │
+│   ├── data/
+│   │   └── iitj_clean_corpus.txt   # Processed text corpus
+│   │   └── iitj_raw_documents.jsonl   # raw text corpus
+│   │
+│   ├── models/
+│   │   └── saved embeddings / checkpoints
+│   │
+│   ├── visualizations/
+│   │   ├── cbow_tsne.png
+│   │   ├── skipgram_tsne.png
+│   │   └── wordcloud.png
+│   │
+│   └── requirements.txt
+│   └── README.md
+│
+├── Problem2/
+│   ├── models.py               # RNN, BLSTM, and Attention model definitions
+│   ├── train_evaluate.py       # Training loop and evaluation metrics
+│   ├── patch.py                # Utility / helper functions
+│   │
+│   ├── checkpoints/
+│   │   ├── VanillaRNN.pt
+│   │   ├── BLSTM.pt
+│   │   └── RNN_Attention.pt
+│   │
+│   ├── names_list.txt          # Training dataset (1000 Indian names)
+│   ├── loss_curves.png         # Training loss visualization
+│   └── requirements.txt
+│   └── README.md
+│
+├── report.pdf                  # Final assignment report
+├── README.md
+├── images                      # results images
+└── .gitignore
 - report.pdf
 - images folder
 
@@ -174,7 +197,7 @@ Problem2/
 # How to Run
 
 ## Problem 1 — Word Embeddings
-
+( see the problem1 folder's readme file)
 
 - python crawler.py
 - python preprocess.py
@@ -183,9 +206,8 @@ Problem2/
 
 
 ## Problem 2 — Name Generation
-
-
-python train_evaluate.py
+( see the problem2 folder's readme file )
+- python train_evaluate.py
 ---
 
 # Technologies Used
