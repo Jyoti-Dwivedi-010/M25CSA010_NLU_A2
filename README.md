@@ -147,48 +147,40 @@ Novelty: 88.17%
 
 # Repository Structure
 
+
 M25CSA010_NLU_A2/
-│
 ├── Problem1/
-│   ├── crawler.py              # Web scraping script to collect IITJ text data
-│   ├── preprocess.py           # Data preprocessing and corpus cleaning
-│   ├── word2vec_scratch.py     # Word2Vec implementation (CBOW & Skip-gram)
-│   ├── analysis_and_vis.py     # Semantic analysis and visualization
-│   │
+│   ├── crawler.py                      # Web scraping script to collect IITJ text data
+│   ├── preprocess.py                   # Data preprocessing and corpus cleaning
+│   ├── word2vec_scratch.py             # Word2Vec implementation (CBOW & Skip-gram)
+│   ├── analysis_and_vis.py             # Semantic analysis and visualization
 │   ├── data/
-│   │   └── iitj_clean_corpus.txt   # Processed text corpus
-│   │   └── iitj_raw_documents.jsonl   # raw text corpus
-│   │
-│   ├── models/
-│   │   └── saved embeddings / checkpoints
-│   │
+│   │   ├── iitj_clean_corpus.txt       # Processed text corpus
+│   │   └── iitj_raw_documents.jsonl    # Raw text corpus
+│   ├── models/                         # Saved embeddings / checkpoints
 │   ├── visualizations/
 │   │   ├── cbow_tsne.png
 │   │   ├── skipgram_tsne.png
 │   │   └── wordcloud.png
-│   │
-│   └── requirements.txt
+│   ├── requirements.txt
 │   └── README.md
-│
 ├── Problem2/
-│   ├── models.py               # RNN, BLSTM, and Attention model definitions
-│   ├── train_evaluate.py       # Training loop and evaluation metrics
-│   ├── patch.py                # Utility / helper functions
-│   │
+│   ├── models.py                       # RNN, BLSTM, and Attention model definitions
+│   ├── train_evaluate.py               # Training loop and evaluation metrics
+│   ├── patch.py                        # Utility / helper functions
 │   ├── checkpoints/
 │   │   ├── VanillaRNN.pt
 │   │   ├── BLSTM.pt
 │   │   └── RNN_Attention.pt
-│   │
-│   ├── names_list.txt          # Training dataset (1000 Indian names)
-│   ├── loss_curves.png         # Training loss visualization
-│   └── requirements.txt
+│   ├── names_list.txt                  # Training dataset (1000 Indian names)
+│   ├── loss_curves.png                 # Training loss visualization
+│   ├── requirements.txt
 │   └── README.md
-│
-├── report.pdf                  # Final assignment report
+├── report.pdf                          # Final assignment report
 ├── README.md
-├── images                      # results images
+├── images/                             # Results images
 └── .gitignore
+
 ---
 
 # How to Run
