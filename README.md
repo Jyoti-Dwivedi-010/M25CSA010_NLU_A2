@@ -147,7 +147,7 @@ Novelty: 88.17%
 
 # Repository Structure
 
-
+```text
 M25CSA010_NLU_A2/
 ├── Problem1/
 │   ├── crawler.py                      # Web scraping script to collect IITJ text data
@@ -180,7 +180,7 @@ M25CSA010_NLU_A2/
 ├── README.md
 ├── images/                             # Results images
 └── .gitignore
-
+```
 ---
 
 # How to Run
