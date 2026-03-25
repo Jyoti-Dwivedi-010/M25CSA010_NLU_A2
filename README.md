@@ -189,9 +189,6 @@ M25CSA010_NLU_A2/
 ├── README.md
 ├── images                      # results images
 └── .gitignore
-- report.pdf
-- images folder
-
 ---
 
 # How to Run
